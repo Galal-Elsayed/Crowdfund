@@ -8,7 +8,5 @@ cmds = [
   "pip install -r requirements.txt"
 ]
 
-[phases.start]
-cmds = [
-  "python manage.py runserver 0.0.0.0:8000"
-]
+[start]
+cmd = "python manage.py runserver 0.0.0.0:8000"
