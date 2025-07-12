@@ -1,5 +1,3 @@
-start = "python manage.py runserver 0.0.0.0:8000"
-
 [phases.setup]
 nixPkgs = ["python311", "gcc"]
 
@@ -8,4 +6,9 @@ cmds = [
   "python -m venv /opt/venv --copies",
   ". /opt/venv/bin/activate",
   "pip install -r requirements.txt"
+]
+
+[phases.start]
+cmds = [
+  "python manage.py runserver 0.0.0.0:8000"
 ]
