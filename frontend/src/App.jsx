@@ -33,7 +33,7 @@ function App() {
 
   const fetchProfile = async (token) => {
     try {
-      await axios.get("http://127.0.0.1:8000/auth/users/me/", {
+      await axios.get(`${import.meta.env.VITE_API_URL}/auth/users/me/`, {
         headers: { Authorization: `Bearer ${token}` },
       });
     } catch (err) {
