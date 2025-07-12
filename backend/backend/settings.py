@@ -92,6 +92,7 @@ import os
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://crowdfund-pi.vercel.app/",
 ]
 
 CORS_ALLOW_HEADERS = list(default_headers) + [
