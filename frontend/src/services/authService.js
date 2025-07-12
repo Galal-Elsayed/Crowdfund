@@ -1,4 +1,4 @@
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = import.meta.env.VITE_API_URL;
 const API_URL = `${API_BASE}/auth/jwt/create/`;
 const USER_URL = `${API_BASE}/auth/users/me/`;
 const CHANGE_PASSWORD_URL = `${API_BASE}/auth/users/set_password/`;

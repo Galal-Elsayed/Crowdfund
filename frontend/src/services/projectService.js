@@ -2,7 +2,7 @@ import axios from "axios";
 import { getToken } from "../utils/tokenStorage";
 import { jwtDecode } from "jwt-decode";
 
-const API_URL = "http://127.0.0.1:8000/projects/";
+const API_URL = `${import.meta.env.VITE_API_URL}/projects/`;
 
 const apiClient = axios.create({
   baseURL: API_URL,
