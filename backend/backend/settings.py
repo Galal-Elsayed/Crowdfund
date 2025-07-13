@@ -29,6 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-!y364#2k+t3en1hahh4(i
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',') if os.environ.get('ALLOWED_HOSTS') else []
+ALLOWED_HOSTS = ["https://crowdfund-production-df22.up.railway.app", "localhost", "127.0.0.1"]
 
 
 # Application definition
