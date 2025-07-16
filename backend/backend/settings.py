@@ -130,11 +130,9 @@ WSGI_APPLICATION = "backend.wsgi.application"
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL', 'postgresql://postgres:password@localhost:5432/postgres'),
+        default=os.environ.get('DATABASE_URL', 'postgresql://postgres:kbKNMgGjuoykJMQeZRKMyOYyNENBOnVm@crossover.proxy.rlwy.net:17010/railway'),
     )
 }
-
-
 
 
 
