@@ -18,6 +18,7 @@ const Login = ({ setIsLoggedIn }) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password })
       });
+      console.log(response);
 
       if (response.ok) {
         const data = await response.json();

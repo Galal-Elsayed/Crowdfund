@@ -28,8 +28,12 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-!y364#2k+t3en1hahh4(i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',') if os.environ.get('ALLOWED_HOSTS') else []
-ALLOWED_HOSTS = ["https://crowdfund-production-df22.up.railway.app", "localhost", "127.0.0.1", "crowdfund-pi.vercel.app"]
+ALLOWED_HOSTS = [
+    "https://crowdfund-production-7c0e.up.railway.app",
+    "localhost",
+    "127.0.0.1",
+    "crowdfund-pi.vercel.app",
+]
 
 
 # Application definition
@@ -90,6 +94,10 @@ MIDDLEWARE = [
 ]
 
 import os
+
+
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
