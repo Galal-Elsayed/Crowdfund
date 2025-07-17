@@ -1,4 +1,4 @@
-const API_URL = "/api/donations/";
+const API_URL = `${import.meta.env.VITE_API_URL}/donations/`;
 
 const createDonation = async (data, token) => {
   const headers = {
