@@ -133,7 +133,7 @@ const ProjectCard = ({
     setLoadingDonations(true);
     setDonationsError("");
     try {
-      const res = await fetch(`/api/donations/?project=${project.id}`);
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/donations/?project=${project.id}`);
       const data = await res.json();
       setDonations(data);
     } catch (err) {

@@ -20,7 +20,7 @@ const Donations = () => {
     async function fetchData() {
       const projs = await getProjects();
       setProjects(projs);
-      const res = await fetch('/api/donations/');
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/donations/`);
       const dons = await res.json();
       setDonations(dons);
     }
